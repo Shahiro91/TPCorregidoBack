@@ -44,19 +44,11 @@
 
 <!-- Clase que aplica estilos específicos para páginas de profesor -->
 <body class="profesor-page">
-
-    <!-- Barra superior con el nombre del gimnasio -->
     <header class="topbar">
         <div class="brand">CENTER GYM</div>
-        <!-- Espacio reservado para acciones futuras en el topbar (ej: logout) -->
-        <div class="topbar-actions"></div>
+        <div class="topbar-actions"> </div>
+        <a href="{% url 'accounts:logout' %}" class="logout-link">Cerrar</a>
     </header>
-
-    <!-- Barra de navegación principal con las secciones del sistema -->
-    <nav class="main-nav profesor-nav">
-        <!-- Esta sección está activa porque venimos desde la lista de profesores -->
-        <a href="{% url 'profesor:lista_profesores' %}" class="nav-link active">PROFESORES</a>
-    </nav>
 
     <!-- Contenido principal de la página -->
     <main class="page-content">
