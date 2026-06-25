@@ -6,6 +6,7 @@ app_name = 'profesor'
 
 urlpatterns = [
     # URL principal del módulo, muestra el listado de todos los profesores
+    path('', views.lista_profesores, name='profesor_home'),
     path('', views.lista_profesores, name='lista_profesores'),
 
     # URL para crear un nuevo profesor
